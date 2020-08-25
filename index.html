@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css?family=Dokdo|Indie+Flower|Shadows+Into+Light" 
         rel="stylesheet">
     <title>
-        Factoring the Sum of Two Squares 
+        Multiplying the Square of a Binomial 
         <br>
         (a + b)<sup>2</sup>
     </title>
@@ -19,59 +19,84 @@
 </head>
 <body>
     <h2 id="h2">
-        Factoring the Sum of Two Squares <br> (a + b)<sup>2</sup>
+        Multiplying the Square of a Binomial 
+        <br> (a + b)<sup>2</sup>
     </h2>
     <p id="inputs1">
-        The Formula to Factor the Sum of Two Squares
+        The Formula to Multiply the binomials is:
         <br>
-        (ax)<sup>2</sup> + (2ab)x + b<sup>2</sup> = 
-        <br> (ax + b)<sup>2</sup>
+        (ax + b)<sup>2</sup> =<br>
+        (ax)<sup>2</sup> + (2ab)x + b<sup>2</sup> 
         <br>
     </p>
     <div id="inputs" >
         <p>
-            When entering the values for a<sup>2</sup>, the middle term, 
+            When entering the values for a<sup>2</sup> 
             and b<sup>2</sup>, 
             <br><br>
             DO NOT enter any variables with the values.
-            Only enter the coefficients of each of the three terms.
+            Only enter the coefficients of each of the terms.
         </p>
         <p>
-            Enter variable a<sup>2</sup> = <br>  
+            Enter variable a<br>
             <input type="numeric" id="varA">  
         </p>
         <p>
-            Enter the middle term = <br>
-            <input type="numeric" id="varM">  
-        </p>
-        <p>
-            Enter variable b<sup>2</sup> = <br>
+            Enter variable b<br>
             <input type="numeric" id="varB">  
         </p>
     </div> 
     <button type="submit" id="submitButton" onclick="answer( )" onclick="calculation2( )">
         SUBMIT
     </button>
-    
     <p id="demo1"></p>
+    <p>
+        This will FOIL the binomial for you so that you do not have to do it by hand.<hr>
+    </p>
+    <p>
+        Example: (5x + 4)<sup>2</sup><br>
+        a = 5, b = 4
+        <p>
+            Enter variable a<br>
+            <input type="numeric" id="varA2">  
+        </p>
+        <p>
+            Enter variable b<br>
+            <input type="numeric" id="varB2">  
+        </p>
+    </div> 
+    <button type="submit" id="submitButton2" onclick="answer2( )">
+        SUBMIT
+    </button>
+    <p id="demo2"></p>
+    </p>
+    <hr>
+    <p>
+        Example: (2x + 3)<sup>2</sup><br>
+        a = 2, b = 3
+        <p>
+            Enter variable a<br>
+            <input type="numeric" id="varA3">  
+        </p>
+        <p>
+            Enter variable b<br>
+            <input type="numeric" id="varB3">  
+        </p>
+    </div> 
+    <button type="submit" id="submitButton3" onclick="answer3( )">
+        SUBMIT
+    </button>
+    <p id="demo3"></p>
+    </p>
 
-    <p id="check">
-        To check your answer, you can FOIL the binomials above and verify
-        that your answer results in the original problem that you started
-        with.
-    </p>
-    <p id="inputs1">
-        Remember: 
-        <span style="color:magenta">FOIL-ing</span> 
-        and 
-        <span style="color:magenta">Factoring</span> 
-        <br>
-        are 
-        <span style="text-emphasis:bold">"Inverse Operations"</span>
-        <br>
-        Each one undoes the other.
-    </p>
-    
+
+
+
+
+
+
+
+
     <footer id="footer">
         ©2019 ALL THINGS MATH   ALL RIGHTS RESERVED
     </footer>
